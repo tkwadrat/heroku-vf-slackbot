@@ -32,7 +32,7 @@ app.event('app_mention', async ({ event, client, say }) => {
 
     let userName = i.user.profile.real_name_normalized
 
-    await say(`Już odpowiadam ${userName}`)
+    await say(`Już odpowiadam ${userName}...`)
     let utterance = event.text.split('>')[1]
     utterance = stripEmojis(utterance)
     utterance = cleanEmail(utterance)
